@@ -21,9 +21,15 @@ if (menuButton && menu) {
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
       closeMenu();
       menuButton.focus();
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (menuButton.getAttribute('aria-expanded') === 'true' && !event.target.closest('.site-header')) {
+      closeMenu();
     }
   });
 
@@ -38,9 +44,11 @@ if (year) year.textContent = String(new Date().getFullYear());
 document.querySelectorAll('[data-analytics]').forEach((link) => {
   link.addEventListener('click', () => {
     if (typeof window.gtag === 'function') {
-      window.gtag('event', 'select_content', {
+      const itemId = link.dataset.analytics;
+      const eventName = itemId.startsWith('whatsapp') ? 'generate_lead' : 'select_content';
+      window.gtag('event', eventName, {
         content_type: 'contact_link',
-        item_id: link.dataset.analytics
+        item_id: itemId
       });
     }
   });

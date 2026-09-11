@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Corretora de Imóveis em Rio Preto | Ruiz Imóveis</title>
   <meta name="description" content="Encontre seu primeiro imóvel em São José do Rio Preto, Mirassol e região com orientação em financiamento e Minha Casa Minha Vida.">
+  <meta name="author" content="Maria Eduarda Ruiz">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#167a55">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -37,17 +38,48 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Ruiz Imóveis",
-    "url": "https://corretoraruiz.com.br/",
-    "logo": "https://corretoraruiz.com.br/assets/logo-ruiz-oficial.webp",
-    "telephone": "+55 17 98170-1495",
-    "description": "Atendimento para compra do primeiro imóvel e orientação em financiamento pelo Minha Casa Minha Vida.",
-    "areaServed": [
-      {"@type": "City", "name": "São José do Rio Preto"},
-      {"@type": "City", "name": "Mirassol"}
-    ],
-    "sameAs": ["https://www.instagram.com/maria_eduruiz/"]
+    "@graph": [
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://corretoraruiz.com.br/#empresa",
+        "name": "Ruiz Imóveis",
+        "url": "https://corretoraruiz.com.br/",
+        "logo": "https://corretoraruiz.com.br/assets/logo-ruiz-oficial.webp",
+        "telephone": "+5517981701495",
+        "description": "Atendimento para compra do primeiro imóvel e orientação em financiamento pelo Minha Casa Minha Vida.",
+        "areaServed": [
+          {"@type": "City", "name": "São José do Rio Preto"},
+          {"@type": "City", "name": "Mirassol"}
+        ],
+        "sameAs": ["https://www.instagram.com/maria_eduruiz/"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://corretoraruiz.com.br/#duvidas",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Preciso ter uma entrada muito alta?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Não necessariamente. O valor depende do imóvel, da renda e das condições do financiamento. Uma simulação permite avaliar o cenário possível para cada comprador."}
+          },
+          {
+            "@type": "Question",
+            "name": "Posso usar meu FGTS?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Em muitos casos, sim. O FGTS pode ajudar na entrada ou reduzir o saldo financiado, desde que o comprador atenda às regras vigentes."}
+          },
+          {
+            "@type": "Question",
+            "name": "Como sei se me encaixo no Minha Casa Minha Vida?",
+            "acceptedAnswer": {"@type": "Answer", "text": "A elegibilidade considera renda familiar, perfil do comprador e valor do imóvel. Uma análise inicial ajuda a identificar os caminhos disponíveis."}
+          },
+          {
+            "@type": "Question",
+            "name": "Você atende somente São José do Rio Preto?",
+            "acceptedAnswer": {"@type": "Answer", "text": "O atendimento é focado em São José do Rio Preto, Mirassol e região."}
+          }
+        ]
+      }
+    ]
   }
   </script>
   <script defer src="assets/site.js"></script>
@@ -55,12 +87,12 @@
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Ruiz Imóveis — início"><img src="assets/logo-ruiz-header.webp" width="40" height="40" alt="Ruiz Imóveis"></a>
+    <a class="brand" href="#inicio" aria-label="Ruiz Imóveis — início"><img src="assets/logo-ruiz-header.webp" width="34" height="34" alt=""></a>
     <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
       <a href="#como-funciona">Como funciona</a><a href="#sobre">Sobre</a><a href="#duvidas">Dúvidas</a>
     </nav>
     <div class="header-actions">
-      <a class="top-cta" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Gostaria%20de%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_header"><span class="cta-symbol" aria-hidden="true">●</span><span>Falar com a Maria</span></a>
+      <a class="top-cta" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Gostaria%20de%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_header"><svg class="top-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a10.24 10.24 0 01-5.228-1.43l-.375-.223-3.888 1.02 1.037-3.79-.245-.39a10.23 10.23 0 01-1.57-5.47c.002-5.645 4.596-10.239 10.242-10.239 2.735 0 5.306 1.066 7.24 3.002a10.17 10.17 0 012.998 7.243c-.003 5.645-4.597 10.239-10.237 10.239m8.72-18.956A12.15 12.15 0 0012.012 0C5.495 0 .192 5.304.19 11.821c0 2.084.543 4.119 1.573 5.91L.09 24l6.411-1.682a11.82 11.82 0 005.509 1.404h.005c6.517 0 11.82-5.304 11.823-11.821a11.74 11.74 0 00-3.447-8.352"></path></svg><span>Falar com a Maria</span></a>
       <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     </div>
   </header>
@@ -68,34 +100,54 @@
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="titulo-principal"><div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Seu primeiro imóvel começa aqui</p>
-        <h1 id="titulo-principal">O caminho até as suas chaves pode ser mais <em>simples.</em></h1>
-        <p class="lead">Orientação próxima para você comprar seu primeiro imóvel com segurança, entender o financiamento e aproveitar as possibilidades do Minha Casa Minha Vida.</p>
-        <div class="actions"><a class="btn" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Gostaria%20de%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_hero">Fazer uma simulação gratuita <span aria-hidden="true">→</span></a><a class="text-link" href="#como-funciona">Entenda como funciona</a></div>
-        <ul class="trust" aria-label="Diferenciais do atendimento"><li>Atendimento transparente</li><li>Rio Preto e Mirassol</li></ul>
+        <p class="eyebrow">Maria Eduarda Ruiz · Corretora de imóveis</p>
+        <h1 id="titulo-principal">Seu primeiro imóvel começa com uma conversa <em>clara.</em></h1>
+        <p class="lead">Eu ajudo você a entender o financiamento, avaliar as possibilidades do Minha Casa Minha Vida e escolher um imóvel compatível com o seu momento.</p>
+        <div class="actions"><a class="btn" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Gostaria%20de%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_hero">Conversar com a Maria</a><a class="text-link" href="#como-funciona">Ver como funciona</a></div>
+        <ul class="trust" aria-label="Informações de atendimento"><li>São José do Rio Preto</li><li>Mirassol e região</li></ul>
       </div>
-      <div class="visual"><div class="identity"><img class="hero-logo" src="assets/logo-ruiz-oficial.webp" width="900" height="900" alt="Ruiz Imóveis" fetchpriority="high" decoding="async"></div><div class="badge"><strong>Especialista em MCMV</strong><span>Orientação do início às chaves</span></div></div>
+      <aside class="visual" aria-label="Perfil do atendimento Ruiz Imóveis">
+        <div class="identity">
+          <div class="identity-top"><span>Ruiz / 01</span><span>Atendimento imobiliário</span></div>
+          <img class="hero-logo" src="assets/logo-ruiz-oficial.webp" width="900" height="900" alt="Ruiz Imóveis" fetchpriority="high" decoding="async">
+          <dl class="identity-details">
+            <div><dt>Foco</dt><dd>Primeiro imóvel</dd></div>
+            <div><dt>Orientação</dt><dd>Financiamento e MCMV</dd></div>
+            <div><dt>Região</dt><dd>Rio Preto e Mirassol</dd></div>
+          </dl>
+        </div>
+      </aside>
     </div></section>
 
-    <ul class="wrap benefits" aria-label="Serviços de orientação"><li class="benefit"><strong>Financiamento</strong><span>Explicado sem complicação</span></li><li class="benefit"><strong>Imóveis</strong><span>Alinhados ao seu perfil</span></li><li class="benefit"><strong>Acompanhamento</strong><span>Próximo em cada etapa</span></li></ul>
+    <ul class="wrap benefits" aria-label="Serviços de orientação">
+      <li class="benefit"><span>01</span><div><strong>Financiamento</strong><small>Explicado sem complicação</small></div></li>
+      <li class="benefit"><span>02</span><div><strong>Imóveis</strong><small>Alinhados ao seu perfil</small></div></li>
+      <li class="benefit"><span>03</span><div><strong>Acompanhamento</strong><small>Próximo em cada etapa</small></div></li>
+    </ul>
 
     <section class="content wrap" id="como-funciona" aria-labelledby="titulo-como-funciona">
-      <div class="heading"><div><p class="eyebrow">Do sonho ao contrato</p><h2 id="titulo-como-funciona">Você não precisa descobrir tudo sozinho.</h2></div><p>Comprar um imóvel envolve decisões importantes. Meu trabalho é tornar cada etapa clara, organizada e mais tranquila para você.</p></div>
-      <div class="steps"><article class="step"><span class="num" aria-hidden="true">01</span><span class="step-icon" aria-hidden="true">●</span><h3>Entendo o seu momento</h3><p>Conversamos sobre renda, objetivos e o imóvel que faz sentido para a sua realidade.</p></article><article class="step"><span class="num" aria-hidden="true">02</span><span class="step-icon" aria-hidden="true">✓</span><h3>Cuido da simulação</h3><p>Você entende as possibilidades de financiamento, entrada e uso do FGTS com clareza.</p></article><article class="step"><span class="num" aria-hidden="true">03</span><span class="step-icon" aria-hidden="true">⌂</span><h3>Acompanho até as chaves</h3><p>Da escolha do imóvel à assinatura, você tem orientação em cada decisão.</p></article></div>
+      <div class="heading"><div><p class="eyebrow">Do primeiro contato às chaves</p><h2 id="titulo-como-funciona">Decisões importantes pedem informação simples.</h2></div><p>Comprar um imóvel envolve renda, documentos, financiamento e escolha. Eu organizo esse caminho com você, uma etapa de cada vez.</p></div>
+      <div class="steps">
+        <article class="step"><span class="num" aria-hidden="true">01</span><div><h3>Entendo o seu momento</h3><p>Conversamos sobre renda, objetivos e o imóvel que faz sentido para a sua realidade.</p></div></article>
+        <article class="step"><span class="num" aria-hidden="true">02</span><div><h3>Apresento as possibilidades</h3><p>Você entende as condições de financiamento, entrada e uso do FGTS com clareza.</p></div></article>
+        <article class="step"><span class="num" aria-hidden="true">03</span><div><h3>Acompanho a escolha</h3><p>Da seleção do imóvel à assinatura, você tem orientação em cada decisão.</p></div></article>
+      </div>
     </section>
 
     <section class="wrap" id="sobre" aria-labelledby="titulo-sobre"><div class="about">
-      <p class="eyebrow">Atendimento de verdade</p><h2 id="titulo-sobre">Mais do que mostrar imóveis, eu ajudo você a tomar uma boa decisão.</h2><p>Sou Maria Eduarda Ruiz, corretora de imóveis com foco em primeiro imóvel e financiamento pelo Minha Casa Minha Vida. Atendo compradores de São José do Rio Preto, Mirassol e região com conversa clara e acompanhamento próximo.</p>
-      <ul class="checks"><li>Análise inicial do seu perfil</li><li>Seleção de oportunidades compatíveis</li><li>Apoio durante todo o financiamento</li></ul>
-      <a class="instagram" href="https://www.instagram.com/maria_eduruiz/" target="_blank" rel="noopener noreferrer" data-analytics="instagram_about">Acompanhe no Instagram <span aria-hidden="true">→</span></a>
+      <div class="about-signature" aria-hidden="true"><span>MR</span><small>Ruiz Imóveis</small></div>
+      <div class="about-copy"><p class="eyebrow">Atendimento pessoal</p><h2 id="titulo-sobre">Mais do que mostrar imóveis, eu ajudo você a tomar uma boa decisão.</h2><p>Sou Maria Eduarda Ruiz, corretora de imóveis com foco em primeiro imóvel e financiamento pelo Minha Casa Minha Vida. Atendo compradores de São José do Rio Preto, Mirassol e região com conversa clara e acompanhamento próximo.</p>
+        <ul class="checks"><li>Análise inicial do seu perfil</li><li>Seleção de oportunidades compatíveis</li><li>Apoio durante o financiamento</li></ul>
+        <a class="instagram" href="https://www.instagram.com/maria_eduruiz/" target="_blank" rel="noopener noreferrer" data-analytics="instagram_about">Conhecer o trabalho no Instagram</a>
+      </div>
     </div></section>
 
     <section class="content wrap faq" id="duvidas" aria-labelledby="titulo-duvidas">
-      <div class="faq-intro"><p class="eyebrow">Dúvidas frequentes</p><h2 id="titulo-duvidas">Informação clara para decidir com confiança.</h2><p>Ainda ficou com alguma dúvida? Me chame e conte um pouco sobre o seu momento.</p><a class="text-link dark-link" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20compra%20do%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_faq">Conversar no WhatsApp <span aria-hidden="true">→</span></a></div>
+      <div class="faq-intro"><p class="eyebrow">Dúvidas frequentes</p><h2 id="titulo-duvidas">Informação clara para decidir com confiança.</h2><p>Ainda ficou com alguma dúvida? Me chame e conte um pouco sobre o seu momento.</p><a class="text-link dark-link" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20compra%20do%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_faq">Tirar uma dúvida no WhatsApp</a></div>
       <div class="faq-list"><details><summary>Preciso ter uma entrada muito alta?</summary><p>Não necessariamente. O valor depende do imóvel, da sua renda e das condições do financiamento. Na simulação, avaliamos o cenário possível para você.</p></details><details><summary>Posso usar meu FGTS?</summary><p>Em muitos casos, sim. O FGTS pode ajudar na entrada ou reduzir o saldo financiado, desde que você atenda às regras vigentes.</p></details><details><summary>Como sei se me encaixo no Minha Casa Minha Vida?</summary><p>A elegibilidade considera renda familiar, perfil do comprador e valor do imóvel. Uma análise inicial ajuda a identificar os caminhos disponíveis.</p></details><details><summary>Você atende somente São José do Rio Preto?</summary><p>O atendimento é focado em São José do Rio Preto, Mirassol e região.</p></details></div>
     </section>
 
-    <section class="wrap" aria-labelledby="titulo-contato"><div class="closing"><p class="eyebrow">Vamos começar?</p><h2 id="titulo-contato">Seu primeiro imóvel pode estar mais perto do que você imagina.</h2><p>Faça uma simulação sem compromisso e descubra as possibilidades para o seu perfil.</p><a class="btn" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Gostaria%20de%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_closing">Quero fazer minha simulação <span aria-hidden="true">→</span></a></div></section>
+    <section class="wrap" aria-labelledby="titulo-contato"><div class="closing"><div><p class="eyebrow">Próximo passo</p><h2 id="titulo-contato">Conte para mim o que você procura.</h2><p>Uma conversa inicial ajuda a entender as possibilidades para o seu perfil, sem compromisso.</p></div><a class="btn" href="https://wa.me/5517981701495?text=Ol%C3%A1%2C%20Maria%21%20Gostaria%20de%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20meu%20primeiro%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" data-analytics="whatsapp_closing">Iniciar conversa no WhatsApp</a></div></section>
   </main>
 
   <footer class="site-footer">
