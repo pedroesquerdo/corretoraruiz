@@ -85,8 +85,8 @@ h1 em { color: var(--green); font-weight: 400; }
 .step p { max-width: 570px; margin: 0; color: var(--muted); font-size: .9375rem; }
 
 .about { display: grid; grid-template-columns: .42fr 1fr; background: var(--ink); color: #fff; }
-.about-signature { min-height: 100%; display: grid; align-content: space-between; padding: clamp(38px, 6vw, 72px); border-right: 1px solid rgba(255, 255, 255, .15); background: var(--green-dark); }
-.about-signature span { color: rgba(255, 255, 255, .94); font: italic clamp(5.5rem, 12vw, 10rem)/.8 Georgia, serif; letter-spacing: -.08em; }
+.about-signature { min-height: 100%; display: grid; align-content: space-between; justify-items: start; padding: clamp(38px, 6vw, 72px); border-right: 1px solid rgba(255, 255, 255, .15); background: var(--green-dark); }
+.about-signature img { width: min(100%, 250px); height: auto; background: #fff; }
 .about-signature small { color: #c7dfd4; font-size: .6875rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
 .about-copy { padding: clamp(44px, 7vw, 84px); }
 .about h2 { max-width: 800px; color: #fff; }
@@ -152,8 +152,8 @@ details p { max-width: 680px; margin-bottom: 4px; font-size: .9375rem; }
   .step { grid-template-columns: 76px minmax(0, 1fr); gap: 24px; }
   .step > div { grid-template-columns: .9fr 1.1fr; gap: 28px; }
   .about { grid-template-columns: 1fr; }
-  .about-signature { min-height: auto; grid-template-columns: 1fr auto; align-items: end; padding: 34px 42px; border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, .15); }
-  .about-signature span { font-size: 5rem; }
+  .about-signature { min-height: auto; grid-template-columns: 100px 1fr; align-items: center; gap: 24px; padding: 28px 42px; border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, .15); }
+  .about-signature img { width: 100px; }
   .closing { grid-template-columns: 1fr; align-items: start; }
   .closing .btn { width: max-content; margin-bottom: 0; }
   .footer-inner { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 28px; }
@@ -185,7 +185,8 @@ details p { max-width: 680px; margin-bottom: 4px; font-size: .9375rem; }
   .step { grid-template-columns: 54px minmax(0, 1fr); gap: 14px; padding: 25px 0; }
   .num { font-size: 1.6rem; }
   .step > div { grid-template-columns: 1fr; gap: 8px; }
-  .about-signature { padding: 28px; }
+  .about-signature { grid-template-columns: 82px 1fr; padding: 24px 28px; }
+  .about-signature img { width: 82px; }
   .about-copy { padding: 38px 28px 42px; }
   .closing { padding: 48px 26px; }
   .closing .btn { width: 100%; white-space: normal; }
